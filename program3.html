@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ShrinkAndGrowth</title>
+</head>
+<body>
+<a href="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\program3.html">Home</a>
+<a href="https://www.holidify.com/collections/tourist-places-in-india">Places</a>
+<a href="https://www.linkedin.com/in/sriram-venkatesh-464067164/">About</a>
+<a href="https://www.google.com/">Search</a> <br>
+<h2>Welcome</h2>
+<div style="margin-top: 25px;">
+	<div style="width: 50%; float: left;">
+		<img src="travel.jpg" alt="Travel around the world" width="500" height="333">
+	</div>
+	
+	<div style="float: left; position: absolute; transform: translate(-50%, -50%); top: 25%; left: 65%;">
+		<p id="demo"></p>
+		<script>
+			var var1 = setInterval(inTimer, 1000);
+			var fs = 5;
+			var ids = document.getElementById("demo");
+			function inTimer() {
+			ids.innerHTML = 'TEXT GROWING';
+			ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+			fs += 5;
+			if(fs >= 50 ){
+				clearInterval(var1);
+				var2 = setInterval(deTimer, 1000);
+				}
+			}
+
+			function deTimer() {
+			fs -= 5;
+			ids.innerHTML = 'TEXT SHRINKING';
+			ids.setAttribute('style', "font-size: " + fs + "px; color: blue");
+			if(fs === 5 ){
+				clearInterval(var2);
+				}
+			}
+		</script>
+	</div>
+
+</div> 
+<div style="width: 100%; float: left;">
+	<p>
+	Travelling means going from one place to another in different purposes. They also explore to see the unseen and know the unknown. The travellers always travel the most beautiful places of the world which uphold the existence of nature. All things are created by Allah. There are many means to see the unseen and know the unknown, but travelling is the best of all. For example: Reading books gives us literal knowledge, listening story gives us indefinite ideas, but travelling gives us visual as well as concrete knowledge. At the same time, people do not travel in the same purposes. Someone travels to gain knowledge and experience, someone travels for pleasure, someone travels for business purposes etc.
+	</p>
+	<p><b>Year: 2021 <br>
+		Date: May, 15th
+		</b>
+	</p>
+	<p><b>Reviews</b><br><br>
+	</p>
+	<div>
+		<p><strong>Nice</strong> <br>Fiona
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\empty-star.png" style="width: 20px; height: 20px;">
+		</p>
+		<p><small>Good one</small></p>
+		<hr style="border:1px solid #f1f1f1">
+	</div>
+	<div>
+		<p><strong>Very good</strong> <br>Adam
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\empty-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\empty-star.png" style="width: 20px; height: 20px;">
+		</p>
+		<p><small>A nice picture</small></p>
+		<hr style="border:1px solid #f1f1f1">
+	</div>
+	<div>
+		<p><strong>Great time</strong> <br>Noah
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		<img src="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\orange-star.png" style="width: 20px; height: 20px;">
+		</p>
+		<p><small>Had a blast</small></p>
+		<hr style="border:1px solid #f1f1f1">
+	</div>
+	
+	<footer>
+		<a href="D:\6th Sem\Web Tech Assignments\Assignment 3 - Web page with shrinking text\shrink.html">Home</a>
+		<a href="https://www.holidify.com/collections/tourist-places-in-india">Places</a>
+		<a href="https://www.linkedin.com/in/sriram-venkatesh-464067164/">About</a>
+		<a href="https://www.google.com/">Search</a> <br>
+		<i>Copyrights</i>
+		<hr style="border:1px">
+	</footer>
+</div>
+
+</body>
+</html>
